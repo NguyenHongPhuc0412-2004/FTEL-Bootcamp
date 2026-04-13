@@ -1,1 +1,1 @@
-# FTEL-Bootcamp
+# FTEL-Bootcamp-Embedded
