@@ -1,26 +1,6 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
- /* cách 1:
-int* dailyTemperatures(int* temperatures, int temperaturesSize, int* returnSize) {
-    *returnSize = temperaturesSize;
-    int *answer = (int*)calloc(sizeof(int), temperaturesSize);
-    for(int i = 0; i<temperaturesSize; i++)
-    {
-        for(int j = i + 1 ; j<temperaturesSize; j++)
-        {
-        if(temperatures[j] > temperatures[i])
-        {
-            answer[i] = j - i;
-            break;
-        }
-        }
-    }
-    return answer;
-
-}
-*/
-
 int* dailyTemperatures(int* temperatures, int temperaturesSize, int* returnSize) {
     *returnSize = temperaturesSize;
 
